@@ -1,13 +1,66 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1614481327033-68e5df399653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #585b5b;
+  color: white;
+  padding: 15px;
+  font-size: 2em;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-page-header {
+  padding-top: 30%;
+  font-size: 55px;
+}
+
+.header {
+  margin: 5%;
+  text-shadow: 2px 2px 8px purple;
+}
+
+.contact {
+  margin: 3%;
+}
+
+.project-card {
+  margin: 10%;
+}
+
+.project-image {
+  width: 500px;
+}
+
+.about-me {
+  margin: 7%;
+}
+
+.links-to-app {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.carousel {
+  width: 50%;
+  margin: auto;
 }
