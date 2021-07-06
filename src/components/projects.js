@@ -44,6 +44,24 @@ const Projects = () => {
     },
   ];
 
+  const images3 = [
+    {
+      image: "./screenshots-proj4/bottomPage.png",
+    },
+    {
+      image: "./screenshots-proj4/homePage.png",
+    },
+    {
+      image: "./screenshots-proj4/loginPage.png",
+    },
+    {
+      image: "./screenshots-proj4/showPage.png",
+    },
+    {
+      image: "./screenshots-proj4/topPage.png",
+    },
+  ];
+
   const projects = [
     {
       title: "Matching Game",
@@ -62,7 +80,19 @@ const Projects = () => {
         "An application for people to post images to find inspiration in various topics. The goal of this project was to create a similar application to Instagram using Express in the backend and a EJS templating engine. MongoDB was used for the database to store the user information. User authentication was added to allow the user to have full CRUD data operations for their posts. The front end was styled with CSS frameworks such as Bootstrap and Bulma.",
       image: <HomeCarousel images={images2} />,
       github: "https://github.com/dezerey11/ejs-express-project2",
+
       deployedApp: "https://seir-project2-inspirationapp.herokuapp.com/",
+    },
+    {
+      title: "Batman Collector's Markeplace",
+      technologies:
+        "HTML, CSS, JavaScript, Ruby on Rails, React, Postgres, Postman",
+      description:
+        "The backend of this application was coded using Ruby on Rails and served a JSON API with CRUD operations to the frontend. The user and post models were set up with a one-to-many relationship. User authentication was set up using JSON Web Tokens (JWTs). React was used for the frontend.",
+      image: <HomeCarousel images={images3} />,
+      github: "https://github.com/dezerey11/project4-frontend",
+      githubBackend: "https://github.com/dezerey11/project4-backend",
+      deployedApp: "https://dezerey11.github.io/project4-frontend/",
     },
   ];
 
@@ -70,8 +100,15 @@ const Projects = () => {
     <div className="projects-container">
       <h1 className="header">MY PROJECTS</h1>
       {projects.map((project) => {
-        const { title, technologies, description, image, github, deployedApp } =
-          project;
+        const {
+          title,
+          technologies,
+          description,
+          image,
+          github,
+          githubBackend,
+          deployedApp,
+        } = project;
 
         return (
           <div className="project-card">
@@ -88,6 +125,13 @@ const Projects = () => {
               GitHub
             </a>
             <br />
+
+            <br />
+            <a target="_blank" href={githubBackend} className="links-to-app">
+              GitHub (Backend)
+            </a>
+            <br />
+
             <a target="_blank" href={deployedApp} className="links-to-app">
               Deployment
             </a>
