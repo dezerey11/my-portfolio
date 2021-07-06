@@ -12,23 +12,28 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/carousel">
-          <HomeCarousel />
-        </Route>
-        <Route exact path="/projects">
-          <Projects />
-        </Route>
-      </Switch>
+
+      <div className="content-container">
+        <br />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/carousel">
+            <HomeCarousel />
+          </Route>
+          <Route exact path="/projects">
+            <Projects />
+          </Route>
+        </Switch>
+        <br />
+      </div>
     </div>
   );
 }

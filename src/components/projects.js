@@ -137,6 +137,7 @@ const Projects = () => {
             </a>
             <br />
             <div>{image}</div>
+            <br />
           </div>
         );
       })}
