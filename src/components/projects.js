@@ -178,7 +178,7 @@ const Projects = () => {
                   href={links[0].github}
                   className="links-to-app"
                 >
-                  Github(frontend)
+                  Github
                 </a>
                 <br />
                 <br />
