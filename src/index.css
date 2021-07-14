@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("https://images.unsplash.com/photo-1614481327033-68e5df399653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
   background-size: cover;
+  text-align: center;
 }
 
 code {
@@ -67,6 +68,7 @@ code {
 
 .contact {
   margin: 3%;
+  overflow-wrap: anywhere;
 }
 
 .contacts-container {
