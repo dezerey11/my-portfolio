@@ -62,6 +62,18 @@ const Projects = () => {
     },
   ];
 
+  const images4 = [
+    {
+      image: "./screenshots-capstone/Login-WS.png",
+    },
+    {
+      image: "./screenshots-capstone/SignIn-WS.png",
+    },
+    {
+      image: "./screenshots-capstone/AppInUse-WS.png",
+    },
+  ];
+
   const projects = [
     {
       title: "Matching Game",
@@ -93,6 +105,17 @@ const Projects = () => {
       github: "https://github.com/dezerey11/project4-frontend",
       githubBackend: "https://github.com/dezerey11/project4-backend",
       deployedApp: "https://dezerey11.github.io/project4-frontend/",
+    },
+    {
+      title: "Chatty Stop",
+      technologies:
+        "HTML, CSS, JavaScript, Express, MongoDB, Mongoose, Socket.IO, React ",
+      description:
+        "For this project MongoDB was used to store the user's information. Then JSON Web Tokens(JWTs) were used to authenticate the user and allow them to send messages. Socket.IO was used to create a websocket that will allow the messages to be sent instantly to other logged in users without having to run a refresh. React was used for the frontend.",
+      image: <HomeCarousel images={images4} />,
+      github: "https://github.com/dezerey11/capstone-frontend",
+      githubBackend: "https://github.com/dezerey11/capstone-project",
+      deployedApp: "https://de-capstone-project.netlify.app/",
     },
   ];
 
