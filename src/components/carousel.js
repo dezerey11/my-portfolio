@@ -8,10 +8,16 @@ function HomeCarousel(props) {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} className="carousel">
-      {props.images.map((slide) => {
+    <Carousel
+      activeIndex={index}
+      onSelect={handleSelect}
+      className="carousel"
+      // slide={false}
+      // fade={false}
+    >
+      {props.images.map((slide, i) => {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={i}>
             <img
               className="d-block w-100"
               src={slide.image}
