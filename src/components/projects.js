@@ -160,7 +160,6 @@ const Projects = () => {
                   {technologies}
                 </h4>
                 <h4>{description}</h4>
-                <br />
                 <h4>
                   <strong>Links to:</strong>
                 </h4>
@@ -197,7 +196,6 @@ const Projects = () => {
                 {technologies}
               </h4>
               <h4>{description}</h4>
-              <br />
               <h4>
                 <strong>Links to:</strong>
               </h4>
