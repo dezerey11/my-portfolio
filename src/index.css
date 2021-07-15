@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("https://images.unsplash.com/photo-1614481327033-68e5df399653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  /* background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDQ0NDQ8VDRUNFRcNDQ0NFRUNHQ0XFRUWFhcVFRUYHSggGB0lHRUfITIhJSktLi4uFx8zODUtNygtLi0BCgoKDQ0NDg0NFSsZHx0rKzcrKysrKysrKys3KysrKysrKysrKysrKysrKysrKysrKysrKysrKystKysrKysrK//AABEIASwAqAMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQf/xAAVEAEBAAAAAAAAAAAAAAAAAAAAEf/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMFBP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDTgHovsoigVFAKIoFQUCoKBUUAqKAVFAKgoFQUCqAMUACgAURQKigFRQCgAtRQCooBUFAqCgVQEc6ABQAKABUFBaIoFQUCoKBUFAqCgVBQKoA50ACgAUACgAUACgAUACgAURQKigFVFEYqKAVBQKgoFQUCoKBUFAqCgVBQKgoFQUCqAjFAAoAFAAoAFAAoAFEUCoKBUFAqKAVRQc6goLUFAqCgVBQKgoFQFCoKgUFAqCgVBUCqKIxUFAqCgVBQKgoFQUCoKBUFAqCgVBQKgopQURmoKBUFAEUCoKAgoFQUCoKBUFAQUBBQFARkAAAAAAAAAAAAAAAAAAgAKKJUQUBBQEFAQUBBQEFAQUBBQEFAQUBUUYoIoUACgAUACgAURQKIoFEUCiChRFAooDnVAFoAFAAoAFAAoAFAAqABVACgAVFAc60AFAAoAFAAoAFAAoAFAAoAFBFCigOVaACgAUACgAUACgAUACgAUACgihRRRyrSChSIKFIgoUiChSIKFIgoUiCi0iAFIAFIAFIoo41pBQogotEFCiChSIKFIgoUiChRBQogoUQUKAqOdaACgAUAgUAgUACgAUACgAtAAoAFFAc61AApAApAAAAQAAAAAKQAKsACpAApH//Z"); */
   background-size: cover;
   text-align: center;
 }
@@ -15,21 +16,30 @@ code {
     monospace;
 }
 
+img {
+  width: 450px;
+  height: 300px;
+  object-fit: contain;
+}
+
 .home-img {
   width: 150px;
-  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 100px;
   margin-bottom: 10%;
   filter: grayscale(100%);
   box-shadow: 2px 2px 8px;
 }
 
 .about-img {
-  width: 150px;
-  border-radius: 50%;
+  width: 200px;
+  height: 250px;
+  border-radius: 20%;
   margin: 0px 5px;
   border-radius: 20px;
   filter: grayscale(100%);
   box-shadow: 2px 2px 8px;
+  object-fit: cover;
 }
 
 .content-container {
@@ -77,10 +87,6 @@ code {
 
 .project-card {
   margin: 10%;
-}
-
-.project-image {
-  width: 500px;
 }
 
 .about-me {

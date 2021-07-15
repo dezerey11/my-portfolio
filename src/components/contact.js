@@ -11,12 +11,21 @@ const Contact = () => {
       <h3>
         <strong>GitHub</strong>
       </h3>
-      <h4 className="contact">https://github.com/dezerey11</h4>
+      <h4 className="contact">
+        <a href="https://github.com/dezerey11" target="_blank">
+          https://github.com/dezerey11
+        </a>
+      </h4>
       <h3>
         <strong>LinkedIn</strong>
       </h3>
       <h4 className="contact">
-        https://www.linkedin.com/in/dezerey-esca%C3%B1uelas-a6b9bb210/
+        <a
+          href=" https://www.linkedin.com/in/dezerey-esca%C3%B1uelas-a6b9bb210/"
+          target="_blank"
+        >
+          https://www.linkedin.com/in/dezerey-esca%C3%B1uelas-a6b9bb210/
+        </a>
       </h4>
     </div>
   );
