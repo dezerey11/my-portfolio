@@ -103,5 +103,8 @@ img {
   height: 50%;
   object-fit: cover;
   margin: auto;
-  /* border: 10px solid black; */
+}
+
+.technologies {
+  color: purple;
 }

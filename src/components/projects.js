@@ -155,7 +155,7 @@ const Projects = () => {
                 <h2>
                   <strong>{title}</strong>
                 </h2>
-                <h4>
+                <h4 className="technologies">
                   <strong>Technologies: </strong>
                   {technologies}
                 </h4>
@@ -191,7 +191,7 @@ const Projects = () => {
               <h2>
                 <strong>{title}</strong>
               </h2>
-              <h4>
+              <h4 className="technologies">
                 <strong>Technologies: </strong>
                 {technologies}
               </h4>
