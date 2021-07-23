@@ -24,14 +24,13 @@ body {
   width: 150px;
   object-fit: cover;
   border-radius: 100px;
-  margin-bottom: 10%;
   filter: grayscale(100%);
   box-shadow: 2px 2px 8px;
 }
 
 .home-page-header {
-  padding-top: 15%;
-  padding-bottom: 10%;
+  padding-top: 175px;
+  margin-bottom: 25px;
   font-size: 55px;
   font-family: "Anton", sans-serif;
   opacity: 0;
@@ -44,8 +43,6 @@ body {
 .about-img {
   width: 200px;
   height: 250px;
-  border-radius: 20%;
-  margin: 0px 5px;
   border-radius: 20px;
   filter: grayscale(100%);
   box-shadow: 2px 2px 8px;
@@ -53,7 +50,7 @@ body {
 }
 
 .about-me {
-  margin: 7%;
+  margin: 30px 100px;
   opacity: 0;
   transform: translateY(-20px);
   animation: 1s forwards 0.5s title-fadein;
@@ -68,7 +65,10 @@ body {
 }
 
 .card-group {
-  margin: 10%;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 125px;
+  margin-bottom: 1px;
 }
 
 .contact-card:hover {
@@ -148,7 +148,7 @@ body {
   bottom: 0;
   right: 0;
   padding: 10px;
-  margin-top: 180px;
+  margin-top: 250px;
 }
 
 .footer-logo {

@@ -9,7 +9,7 @@ const NavBar = () => {
     <div>
       <Navbar bg="dark" variant="dark" fixed="top">
         <Container>
-          <Navbar.Brand href="/" className="nav-link">
+          <Navbar.Brand href="/" className="nav-link project-font">
             <strong>Dezerey's Portfolio</strong>
           </Navbar.Brand>
           <Nav className="me-auto">
