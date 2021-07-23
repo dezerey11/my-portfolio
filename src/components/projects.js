@@ -155,7 +155,7 @@ const Projects = () => {
             return (
               <div className="project-card">
                 <Card border="dark" style={{ width: "70%" }}>
-                  <Card.Header>
+                  <Card.Header className="project-font">
                     <h2>{title}</h2>
                   </Card.Header>
                   <br />
@@ -163,13 +163,13 @@ const Projects = () => {
                   <Card.Body>
                     <Card.Text>
                       <p className="technologies">
-                        <strong>Technologies: </strong>
+                        {/* <strong>Technologies: </strong> */}
                         {technologies}
                       </p>
                       <p>{description}</p>
                     </Card.Text>
                   </Card.Body>
-                  <Card.Footer>
+                  <Card.Footer className="project-font">
                     <inline>
                       <strong>Links to:</strong>
                       <Button variant="info" className="links-to-app-button">
@@ -199,7 +199,7 @@ const Projects = () => {
           return (
             <div className="project-card">
               <Card border="dark" style={{ width: "70%" }}>
-                <Card.Header>
+                <Card.Header className="project-font">
                   <h2>{title}</h2>
                 </Card.Header>
                 <br />
@@ -213,7 +213,7 @@ const Projects = () => {
                     <p>{description}</p>
                   </Card.Text>
                 </Card.Body>
-                <Card.Footer>
+                <Card.Footer className="project-font">
                   <strong>Links to:</strong>
                   <Button variant="info" className="links-to-app-button">
                     <a

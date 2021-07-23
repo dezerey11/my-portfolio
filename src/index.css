@@ -10,6 +10,7 @@ body {
   margin-top: 70px;
   margin-bottom: 50px;
   font-size: 50px;
+  font-family: "Anton", sans-serif;
   /* text-decoration: underline; */
   color: rgb(48, 102, 102);
   opacity: 0;
@@ -32,6 +33,7 @@ body {
   padding-top: 15%;
   padding-bottom: 10%;
   font-size: 55px;
+  font-family: "Anton", sans-serif;
   opacity: 0;
   transform: translateY(-20px);
   animation: 1s forwards title-fadein;
@@ -62,6 +64,7 @@ body {
 .contact-card {
   align-items: center;
   justify-content: center;
+  font-family: "Anton", sans-serif;
 }
 
 .card-group {
@@ -81,7 +84,8 @@ body {
 }
 
 .img-contact-logo {
-  width: 100px;
+  width: 110px;
+  height: 100px;
   margin: 10px 100px;
 }
 
@@ -101,7 +105,12 @@ body {
   justify-content: center;
 }
 
+.project-font {
+  font-family: "Anton", sans-serif;
+}
+
 .technologies {
+  font-family: "Anton", sans-serif;
   color: purple;
 }
 
@@ -144,6 +153,7 @@ body {
 
 .footer-logo {
   width: 20px;
+  height: 20px;
 }
 
 /* ANIMATION KEYFRAMES */
