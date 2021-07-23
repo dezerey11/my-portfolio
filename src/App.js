@@ -38,6 +38,7 @@ function App() {
         </Switch>
         <br />
       </div>
+      <br />
       <Footer />
     </div>
   );

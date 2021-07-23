@@ -1,44 +1,65 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import { Button, Card, CardGroup } from "react-bootstrap";
 
 const Contact = () => {
   return (
     <div className="contact-container">
       <h1 className="header">CONTACT ME AT:</h1>
+      <CardGroup className="card-group">
+        <Card
+          border="secondary"
+          style={{ width: "30%" }}
+          className="contact-card"
+        >
+          <img src="./contacts/gmail2.png" className="img-contact-logo" />
+          <br />
+          <Button variant="primary" size="lg">
+            <a href="mailto:dezerey11@gmail.com" className="links-to-contact">
+              Email
+            </a>
+          </Button>
 
-      <Card border="dark" className="contact-card" style={{ width: "60%" }}>
-        <Card.Header as="h5">Email</Card.Header>
-        <Card.Body>
-          <Card.Title>dezerey11@gmail.com</Card.Title>
-        </Card.Body>
-      </Card>
-      <br />
-      <br />
-      <Card border="dark" className="contact-card" style={{ width: "60%" }}>
-        <Card.Header as="h5">GitHub</Card.Header>
-        <Card.Body>
-          <Card.Title>
-            <a href="https://github.com/dezerey11" target="_blank">
-              https://github.com/dezerey11
-            </a>
-          </Card.Title>
-        </Card.Body>
-      </Card>
-      <br />
-      <br />
-      <Card border="dark" className="contact-card" style={{ width: "60%" }}>
-        <Card.Header as="h5">LinkedIn</Card.Header>
-        <Card.Body>
-          <Card.Title>
+          <br />
+        </Card>
+
+        <Card
+          border="secondary"
+          style={{ width: "30%" }}
+          className="contact-card"
+        >
+          <img src="./contacts/github.png" className="img-contact-logo" />
+          <br />
+          <Button variant="primary" size="lg">
             <a
-              href=" https://www.linkedin.com/in/dezerey-esca%C3%B1uelas-a6b9bb210/"
               target="_blank"
+              href="https://github.com/dezerey11"
+              className="links-to-contact"
             >
-              https://www.linkedin.com/in/dezerey-esca%C3%B1uelas-a6b9bb210/
+              Github
             </a>
-          </Card.Title>
-        </Card.Body>
-      </Card>
+          </Button>
+          <br />
+        </Card>
+
+        <Card
+          border="secondary"
+          style={{ width: "30%" }}
+          className="contact-card"
+        >
+          <img src="./contacts/linkedin.png" className="img-contact-logo" />
+          <br />
+          <Button variant="primary" size="lg">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/dezerey-esca%C3%B1uelas-a6b9bb210/"
+              className="links-to-contact"
+            >
+              LinkedIn
+            </a>
+          </Button>
+          <br />
+        </Card>
+      </CardGroup>
     </div>
   );
 };

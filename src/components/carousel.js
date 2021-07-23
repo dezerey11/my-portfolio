@@ -19,7 +19,7 @@ function HomeCarousel(props) {
           <Carousel.Item key={i}>
             <img
               style={{ width: "50%" }}
-              className="d-block w-100"
+              className="d-block w-100 slider-image"
               src={slide.image}
               alt="slider image"
             />
