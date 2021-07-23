@@ -1,5 +1,7 @@
 import React from "react";
 import HomeCarousel from "../components/carousel";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 const Projects = () => {
   const images1 = [
@@ -109,7 +111,7 @@ const Projects = () => {
     {
       title: "Batman Collector's Markeplace",
       technologies:
-        "HTML, CSS, JavaScript, Ruby on Rails, React, Postgres, Postman",
+        "HTML, CSS, JavaScript, Ruby on Rails, React, PostgreSQL, Postman",
       description:
         "An app for a collector of Batman items to post their items for sale. The backend of this application was coded using Ruby on Rails and served a JSON API with CRUD operations to the frontend. The user and post models were set up with a one-to-many relationship. User authentication was set up using JSON Web Tokens (JWTs). React was used for the frontend.",
       image: <HomeCarousel images={images3} />,
@@ -151,82 +153,97 @@ const Projects = () => {
         {
           if (links.length === 2) {
             return (
-              <div className="project-card" key={i}>
-                <h2>
-                  <strong>{title}</strong>
-                </h2>
-                <h4 className="technologies">
-                  <strong>Technologies: </strong>
-                  {technologies}
-                </h4>
-                <h4>{description}</h4>
-                <h4>
-                  <strong>Links to:</strong>
-                </h4>
-
-                <a
-                  target="_blank"
-                  href={links[1].deployedApp}
-                  className="links-to-app"
-                >
-                  Deployed Site
-                </a>
-                <br />
-                <a
-                  target="_blank"
-                  href={links[0].github}
-                  className="links-to-app"
-                >
-                  Github
-                </a>
-                <br />
-                <br />
-                <div>{image}</div>
-                <br />
+              <div className="project-card">
+                <Card border="dark" style={{ width: "70%" }}>
+                  <Card.Header>
+                    <h2>{title}</h2>
+                  </Card.Header>
+                  <br />
+                  <div>{image}</div>
+                  <Card.Body>
+                    <Card.Text>
+                      <p className="technologies">
+                        <strong>Technologies: </strong>
+                        {technologies}
+                      </p>
+                      <p>{description}</p>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <inline>
+                      <strong>Links to:</strong>
+                      <Button variant="info" className="links-to-app-button">
+                        <a
+                          target="_blank"
+                          href={links[1].deployedApp}
+                          className="links-to-app"
+                        >
+                          Deployed Site
+                        </a>
+                      </Button>
+                      <Button variant="dark" className="links-to-app-button">
+                        <a
+                          target="_blank"
+                          href={links[0].github}
+                          className="links-to-app"
+                        >
+                          Github
+                        </a>
+                      </Button>
+                    </inline>
+                  </Card.Footer>
+                </Card>
               </div>
             );
           }
           return (
-            <div className="project-card" key={i}>
-              <h2>
-                <strong>{title}</strong>
-              </h2>
-              <h4 className="technologies">
-                <strong>Technologies: </strong>
-                {technologies}
-              </h4>
-              <h4>{description}</h4>
-              <h4>
-                <strong>Links to:</strong>
-              </h4>
-              <a
-                target="_blank"
-                href={links[1].deployedApp}
-                className="links-to-app"
-              >
-                Deployed Site
-              </a>
-              <br />
-              <a
-                target="_blank"
-                href={links[0].github}
-                className="links-to-app"
-              >
-                Github(frontend)
-              </a>
-
-              <br />
-              <a
-                target="_blank"
-                href={links[2].githubBackend}
-                className="links-to-app"
-              >
-                Github (backend)
-              </a>
-              <br />
-              <br />
-              <div>{image}</div>
-              <br />
+            <div className="project-card">
+              <Card border="dark" style={{ width: "70%" }}>
+                <Card.Header>
+                  <h2>{title}</h2>
+                </Card.Header>
+                <br />
+                <div>{image}</div>
+                <Card.Body>
+                  <Card.Text>
+                    <p className="technologies">
+                      <strong>Technologies: </strong>
+                      {technologies}
+                    </p>
+                    <p>{description}</p>
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <strong>Links to:</strong>
+                  <Button variant="info" className="links-to-app-button">
+                    <a
+                      target="_blank"
+                      href={links[1].deployedApp}
+                      className="links-to-app"
+                    >
+                      Deployed Site
+                    </a>
+                  </Button>
+                  <Button variant="dark" className="links-to-app-button">
+                    <a
+                      target="_blank"
+                      href={links[0].github}
+                      className="links-to-app"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                  <Button variant="secondary" className="links-to-app-button">
+                    <a
+                      target="_blank"
+                      href={links[2].githubBackend}
+                      className="links-to-app"
+                    >
+                      Github (Backend)
+                    </a>
+                  </Button>
+                </Card.Footer>
+              </Card>
             </div>
           );
         }

@@ -2,17 +2,18 @@ import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
-import Nav from "./components/nav";
+import NavBar from "./components/nav";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import About from "./components/about";
+import Footer from "./components/footer";
+import Skills from "./components/skills";
 import HomeCarousel from "./components/carousel";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-
+      <NavBar />
       <div className="content-container">
         <br />
         <Switch>
@@ -31,9 +32,13 @@ function App() {
           <Route exact path="/projects">
             <Projects />
           </Route>
+          <Route exact path="/skills">
+            <Skills />
+          </Route>
         </Switch>
         <br />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 function HomeCarousel(props) {
   const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
 
@@ -12,13 +12,13 @@ function HomeCarousel(props) {
       activeIndex={index}
       onSelect={handleSelect}
       className="carousel"
-      // slide={false}
-      // fade={false}
+      // variant="dark"
     >
       {props.images.map((slide, i) => {
         return (
           <Carousel.Item key={i}>
             <img
+              style={{ width: "50%" }}
               className="d-block w-100"
               src={slide.image}
               alt="slider image"
