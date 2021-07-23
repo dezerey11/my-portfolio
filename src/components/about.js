@@ -13,9 +13,9 @@ const About = () => {
           find answers to unknown questions and experimenting to learn new
           things about various topics such as an animal's adaptability to their
           environment or using stem cells to further study the brain. I am
-          generally a curious person, my biggest motivation is knowing that
-          there is ALWAYS something else to learn and that is what pushes me to
-          keep learning about science and technology. My interest in software
+          generally a curious person. My biggest motivation is knowing that
+          there is ALWAYS something new to learn which is what pushes me to keep
+          learning about science and technology. My interest in software
           engineering started while I was completing my undergrad. I wanted to
           learn to code so I started taking online lessons for HTML, CSS, and
           JavaScript. Coding opened a new interest for me and I wanted to keep
