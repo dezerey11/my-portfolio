@@ -207,7 +207,7 @@ const Projects = () => {
                 <Card.Body>
                   <Card.Text>
                     <p className="technologies">
-                      <strong>Technologies: </strong>
+                      {/* <strong>Technologies: </strong> */}
                       {technologies}
                     </p>
                     <p>{description}</p>
