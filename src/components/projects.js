@@ -78,6 +78,23 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Chatty Stop",
+      technologies:
+        "HTML, CSS, JavaScript, Express, MongoDB, Mongoose, Socket.IO, React ",
+      description:
+        "A simple chat app to message other logged in users. For this project MongoDB was used to store the user's information. Then JSON Web Tokens(JWTs) were used to authenticate the user and allow them to send messages. Socket.IO was used to create a websocket that will allow the messages to be sent instantly to other logged in users without having to run a refresh. React was used for the frontend. ",
+      image: <HomeCarousel images={images4} />,
+      links: [
+        {
+          github: "https://github.com/dezerey11/capstone-frontend",
+        },
+        { deployedApp: "https://de-capstone-project.netlify.app/" },
+        {
+          githubBackend: "https://github.com/dezerey11/capstone-project",
+        },
+      ],
+    },
+    {
       title: "Matching Game",
       technologies: "HTML, CSS, JavaScript, JQuery",
       description:
@@ -110,8 +127,7 @@ const Projects = () => {
     },
     {
       title: "Batman Collector's Markeplace",
-      technologies:
-        "HTML, CSS, JavaScript, Ruby on Rails, React, PostgreSQL, Postman",
+      technologies: "HTML, CSS, JavaScript, Ruby on Rails, React, PostgreSQL",
       description:
         "An app for a collector of Batman items to post their items for sale. The backend of this application was coded using Ruby on Rails and served a JSON API with CRUD operations to the frontend. The user and post models were set up with a one-to-many relationship. User authentication was set up using JSON Web Tokens (JWTs). React was used for the frontend.",
       image: <HomeCarousel images={images3} />,
@@ -123,23 +139,6 @@ const Projects = () => {
           deployedApp: "https://dezerey11.github.io/project4-frontend/",
         },
         { githubBackend: "https://github.com/dezerey11/project4-backend" },
-      ],
-    },
-    {
-      title: "Chatty Stop",
-      technologies:
-        "HTML, CSS, JavaScript, Express, MongoDB, Mongoose, Socket.IO, React ",
-      description:
-        "A simple chat app to message other logged in users. For this project MongoDB was used to store the user's information. Then JSON Web Tokens(JWTs) were used to authenticate the user and allow them to send messages. Socket.IO was used to create a websocket that will allow the messages to be sent instantly to other logged in users without having to run a refresh. React was used for the frontend. ",
-      image: <HomeCarousel images={images4} />,
-      links: [
-        {
-          github: "https://github.com/dezerey11/capstone-frontend",
-        },
-        { deployedApp: "https://de-capstone-project.netlify.app/" },
-        {
-          githubBackend: "https://github.com/dezerey11/capstone-project",
-        },
       ],
     },
   ];

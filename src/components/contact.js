@@ -3,8 +3,9 @@ import { Button, Card, CardGroup } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div>
       <h1 className="header">CONTACT ME AT:</h1>
+
       <CardGroup className="card-group">
         <Card
           border="secondary"

@@ -56,6 +56,12 @@ body {
   animation: 1s forwards 0.5s title-fadein;
 }
 
+/* NAV */
+
+#basic-nav-dropdown {
+  display: none;
+}
+
 /* CONTACT COMPONENT */
 
 .contact-card {
@@ -65,8 +71,8 @@ body {
 }
 
 .card-group {
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 2%;
+  margin-right: 2%;
   margin-top: 125px;
   margin-bottom: 1px;
 }
@@ -128,12 +134,6 @@ body {
 
 /* CAROUSEL COMPONENT */
 
-.carousel {
-  width: 60%;
-  height: 50%;
-  object-fit: cover;
-  margin: auto;
-}
 .slider-image {
   width: 450px;
   height: 300px;
@@ -154,6 +154,37 @@ body {
 .footer-logo {
   width: 20px;
   height: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Contact */
+  .img-contact-logo {
+    width: 70px;
+    height: 60px;
+    margin: 10px 100px;
+  }
+  .links-to-contact {
+    font-size: 15px;
+  }
+  .contact-card {
+    margin: 0 auto;
+  }
+  .contact-container {
+    width: 200%;
+  }
+
+  /* Nav */
+  #nav {
+    display: none;
+  }
+  #basic-nav-dropdown {
+    display: block;
+  }
+
+  /* Carousel */
+  .carousel {
+    margin: 0px 10px;
+  }
 }
 
 /* ANIMATION KEYFRAMES */

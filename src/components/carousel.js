@@ -9,16 +9,15 @@ function HomeCarousel(props) {
 
   return (
     <Carousel
+      variant="dark"
       activeIndex={index}
       onSelect={handleSelect}
       className="carousel"
-      // variant="dark"
     >
       {props.images.map((slide, i) => {
         return (
           <Carousel.Item key={i}>
             <img
-              style={{ width: "50%" }}
               className="d-block w-100 slider-image"
               src={slide.image}
               alt="slider image"
