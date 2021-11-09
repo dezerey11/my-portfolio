@@ -6,16 +6,16 @@ import Button from "react-bootstrap/Button";
 const Projects = () => {
   const images1 = [
     {
-      image: "./screenshots-proj1/project1-1.png",
+      image: "./screenshots-proj1.1/Screenshot -1.png",
     },
     {
-      image: "./screenshots-proj1/project1-2.png",
+      image: "./screenshots-proj1.1/Screenshot -2.png",
     },
     {
-      image: "./screenshots-proj1/project1-3.png",
+      image: "./screenshots-proj1.1/Screenshot -3.png",
     },
     {
-      image: "./screenshots-proj1/project1-4.png",
+      image: "./screenshots-proj1.1/Screenshot -4.png",
     },
   ];
 
@@ -48,9 +48,6 @@ const Projects = () => {
 
   const images3 = [
     {
-      image: "./screenshots-proj4/bottomPage.png",
-    },
-    {
       image: "./screenshots-proj4/homePage.png",
     },
     {
@@ -61,6 +58,9 @@ const Projects = () => {
     },
     {
       image: "./screenshots-proj4/topPage.png",
+    },
+    {
+      image: "./screenshots-proj4/bottomPage.png",
     },
   ];
 
